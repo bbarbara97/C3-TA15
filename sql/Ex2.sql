@@ -34,7 +34,7 @@ insert into Proveedores values (6789, 'Guerrin');
 insert into Proveedores values (7899, 'Isolana');
 insert into Proveedores values (8987, 'Carlin');
 insert into Proveedores values (9876, 'Bricomat');
-insert into Proveedores values (1012, 'Leroy Merlyn');
+insert into Proveedores values (1012, 'Bricomania');
 
 select * from Proveedores;
 
@@ -63,8 +63,9 @@ insert into Suministra values (10, 1012, 16);
 select * from Suministra;
 
 update  Piezas set Nombre ='Tuerca Hexagonal' where Codigo=1;
+update  Piezas set Nombre ='Tornillo de Estrella' where Codigo=2;
 
-update Proveedores set Nombre='Bricomania' where id=1012;
+update Proveedores set Nombre='Leroy' where id='1012';
 
 delete from  Suministra where CodigoPieza=10;
 
